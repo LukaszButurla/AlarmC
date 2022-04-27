@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9507f76e-273e-4ae7-ae5b-f8c6273786a3": {
+      "ProjectGuid": "9507f76e-273e-4ae7-ae5b-f8c6273786a3",
+      "DisplayName": "alarm3",
+      "ColorIndex": 0
+    },
+    "67e9073a-8449-483b-b96a-299d69d95808": {
+      "ProjectGuid": "67e9073a-8449-483b-b96a-299d69d95808",
+      "DisplayName": "Components",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
