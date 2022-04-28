@@ -19,20 +19,10 @@ class Clock:
 
     def Load_time(self):
 
-        print("1")
-
-        print(self.hour)
-        print(self.minute)
-
         self.hour = datetime.today().hour
         self.minute = datetime.today().minute
 
     def ShowClock(self):
-
-        print("2")
-
-        print(self.hour)
-        print(self.minute)
 
         strHour = str(self.hour)
         strMinute = str(self.minute)

@@ -10,11 +10,13 @@ class Main:
 
     window = None
     clock = None
+    ui = None
 
     def __init__(self):
         
         self.ConfigurateWindow()
         self.clock = Clock(self.window)  
+        self.ui = MainView(self.window)
         self.Update()
 
 
