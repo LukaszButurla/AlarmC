@@ -21,6 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Components\Info\info.py" />
+    <Compile Include="Components\Info\__init__.py" />
+    <Compile Include="Components\Timepiece\timepiece.py" />
+    <Compile Include="Components\Timepiece\__init__.py" />
+    <Compile Include="Components\Timer\timer.py" />
+    <Compile Include="Pages\alarmsPage.py" />
+    <Compile Include="Pages\clockPage.py" />
+    <Compile Include="Pages\infoPage.py" />
+    <Compile Include="Pages\timepiecePage.py" />
+    <Compile Include="Pages\timerPage.py" />
+    <Compile Include="Components\Timer\__init__.py" />
     <Compile Include="main.py" />
     <Compile Include="Components\Alarms\alarmManager.py" />
     <Compile Include="Components\Alarms\__init__.py" />
@@ -38,8 +49,12 @@
     <Folder Include="Components\" />
     <Folder Include="Components\Alarms\" />
     <Folder Include="Components\Clock\" />
+    <Folder Include="Components\Info\" />
+    <Folder Include="Components\Timepiece\" />
+    <Folder Include="Components\Timer\" />
     <Folder Include="Components\Style\" />
     <Folder Include="Components\Ui\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

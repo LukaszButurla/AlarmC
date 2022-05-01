@@ -2,44 +2,41 @@ from tkinter import *
 from Components.Style.style import gray
 from datetime import datetime
 from time import time, sleep
-from Components.Alarms.alarmManager import AlarmManager
 
 class Clock:
 
     window = None
     hour = None
     minute = None
+    frame = None
 
-    def __init__(self, root):
+    def __init__(self, frame):   
 
-        window = root       
-        
-        self.Load_time()
-        self.ShowClock()
+        self.frame = frame
+        print("frame:", frame)
+        print("self frame:", self.frame)
+        print("init clock")
 
-    def Load_time(self):
+    def LoadTime(self):
 
         self.hour = datetime.today().hour
         self.minute = datetime.today().minute
 
     def ShowClock(self):
 
-        strHour = str(self.hour)
         strMinute = str(self.minute)
 
         if len(strMinute) == 1:
             self.minute = "0" + strMinute
 
-        txt_01 = Label(self.window, text = "{}:{}".format(self.hour, self.minute), anchor="nw", font=("Calibri", 20), bg = gray)
-        txt_01.place(x = 276, y = 0)
-
+        txt_01 = Label(self.frame, text = "{}:{}".format(self.hour, self.minute), anchor="nw", font=("Calibri", 20), bg = "white")
+        txt_01.place(x = 140, y = 350)
 
     def Update(self):
-
-        while True:
-            sleep(1 - time() % 1)
-
-            print("2")
+          
+        self.LoadTime()
+        self.ShowClock()
+    
 
 
         
