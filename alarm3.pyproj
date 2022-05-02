@@ -26,6 +26,7 @@
     <Compile Include="Components\Timepiece\timepiece.py" />
     <Compile Include="Components\Timepiece\__init__.py" />
     <Compile Include="Components\Timer\timer.py" />
+    <Compile Include="Components\Timer\timerBtn.py" />
     <Compile Include="Pages\alarmsPage.py" />
     <Compile Include="Pages\clockPage.py" />
     <Compile Include="Pages\infoPage.py" />

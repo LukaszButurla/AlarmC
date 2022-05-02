@@ -23,6 +23,7 @@ class Main:
          
     def ConfigurateWindow(self):
         
+
         self.window = Tk()
 
         self.window.geometry("{}x{}".format(width, height))
@@ -36,8 +37,8 @@ class Main:
 
             self.window.update()     
             self.ui.clockPage.clock.LoadTime()
-            self.ui.clockPage.clock.ShowClock()    
-            
+            self.ui.clockPage.clock.ShowClock()  
+            self.ui.timerPage.timerBtn.timer.Count()
         
 
 if __name__ == "__main__":
